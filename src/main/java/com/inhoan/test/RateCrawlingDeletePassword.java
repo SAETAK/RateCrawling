@@ -17,7 +17,7 @@ public class RateCrawling {
         	String rateUrl = "http://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=환율";
 		String mariadbUrl = "jdbc:mariadb://localhost:3306/crawling";
        		String mariadbUser = "root";
-        	String mariadbPassword = "57878";
+        	String mariadbPassword = "비밀번호";
 
 		try {
 			Document naverAddr = Jsoup.connect(rateUrl).get();
