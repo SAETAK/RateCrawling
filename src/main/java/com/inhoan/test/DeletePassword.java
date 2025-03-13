@@ -21,10 +21,10 @@ public class DeletePassword {
 
 		try {
 			Document naverAddr = Jsoup.connect(rateUrl).get();
-        		Elements exchangeRate = naverAddr.getElementsByAttributeValue("class", "nb_txt _pronunciation");
+        		Elements crawlingValue = naverAddr.getElementsByAttributeValue("class", "nb_txt _pronunciation");
 		
-			if (exchangeRate.size() > 1) {
-				String rate = exchangeRate.get(1).text();
+			if (crawlingValue.size() > 1) {
+				String rate = crawlingValue.get(1).text();
 				String removeStr = rate.replaceAll("[^0-9]","");
 				double rateValue = Double.parseDouble(removeStr);
 
