@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 import java.io.IOException;
 
-public class RateCrawling {
+public class DeletePassword {
 	public static void main(String[] args) {
         	String rateUrl = "http://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=환율";
 		String mariadbUrl = "jdbc:mariadb://localhost:3306/crawling";
