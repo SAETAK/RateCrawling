@@ -25,7 +25,7 @@ public class DeletePassword {
 		
 			if (crawlingValue.size() > 1) {
 				String rate = crawlingValue.get(1).text();
-				String removeStr = rate.replaceAll("[^0-9]","");
+				String removeStr = rate.replaceAll("[^0-9.]","");
 				double rateValue = Double.parseDouble(removeStr);
 
                 		//System.out.println(rate);
