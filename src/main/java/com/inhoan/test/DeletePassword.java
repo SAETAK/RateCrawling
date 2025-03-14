@@ -34,8 +34,8 @@ public class DeletePassword {
 			} else {
 				System.out.println("환율 데이터를 찾을 수 없습니다.");
 			}
-    		} catch (IOException e) {
-			e.printStackTrace();
+    		} catch (IOException exception) {
+			exception.printStackTrace();
 		}
     	}
 
@@ -46,8 +46,8 @@ public class DeletePassword {
 			pstmt.setDouble(1, rateValue);
 			int rows = pstmt.executeUpdate();
 			System.out.println(rows + "개의 행이 삽입 되었습니다.");
-		} catch (SQLException e) {
-			e.printStackTrace();
+		} catch (SQLException exception) {
+			exception.printStackTrace();
 		}
 	}
 }
