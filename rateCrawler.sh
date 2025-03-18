@@ -12,3 +12,8 @@ if ! /usr/bin/mvn compile exec:java -Dexec.mainClass="com.inhoan.test.RateCrawli
 	echo "Compile failed, creating lock file." >> /root/test/error.log
 	exit 1
 fi
+
+#error.log 가 비어 있다면 삭제 ( 오류가 없다는 뜻 )
+if [ ! -s /root/test/error.log ]; then
+	rm -f /root/test/error.log
+fi
